@@ -11,5 +11,5 @@ services:
                 - docker ps
 
                 script:
-                    - while ! curl --retry 10 --retry-delay 5 -v http://0.0.0.0:8080 >/dev/null; do sleep 1; done
+                    - while ! curl --retry 10 --retry-delay 6 -v http://0.0.0.0:8080 >/dev/null; do sleep 1; done
                     ```
